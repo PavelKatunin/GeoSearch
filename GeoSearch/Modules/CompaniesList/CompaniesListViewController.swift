@@ -9,4 +9,12 @@ class CompaniesListViewController: ASViewController<ASTableNode>, CompaniesListV
         }
     }
     
+    override init(node: ASTableNode = ASTableNode()) {
+        super.init(node: node)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }

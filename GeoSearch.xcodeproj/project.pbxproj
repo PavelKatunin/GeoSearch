@@ -21,7 +21,7 @@
 		76161B01209636F40023B437 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161B00209636F40023B437 /* Address.swift */; };
 		76161B092096378C0023B437 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161B082096378C0023B437 /* ServiceLocator.swift */; };
 		76C9A94720963A6B00B0D7BE /* CompaniesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94620963A6B00B0D7BE /* CompaniesListProtocols.swift */; };
-		76C9A94920963A8200B0D7BE /* CompaniesMapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94820963A8200B0D7BE /* CompaniesMapProtocol.swift */; };
+		76C9A94920963A8200B0D7BE /* CompaniesMapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94820963A8200B0D7BE /* CompaniesMapProtocols.swift */; };
 		76C9A94B20963A9500B0D7BE /* GeoSearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94A20963A9500B0D7BE /* GeoSearchProtocols.swift */; };
 		76C9A94D20963C5400B0D7BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94C20963C5400B0D7BE /* Result.swift */; };
 		76C9A9502096406800B0D7BE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A94F2096406800B0D7BE /* Endpoint.swift */; };
@@ -36,8 +36,8 @@
 		76C9A96320965B5E00B0D7BE /* GeoSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A96220965B5E00B0D7BE /* GeoSearchInteractor.swift */; };
 		76C9A965209661CF00B0D7BE /* GlobalServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A964209661CF00B0D7BE /* GlobalServiceLocator.swift */; };
 		76C9A9672096676E00B0D7BE /* CompaniesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A9662096676E00B0D7BE /* CompaniesListViewController.swift */; };
-		76C9A96B2096679300B0D7BE /* CompaniesListMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A96A2096679300B0D7BE /* CompaniesListMapViewController.swift */; };
-		76C9A96D209667AD00B0D7BE /* CompaniesListMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A96C209667AD00B0D7BE /* CompaniesListMapInteractor.swift */; };
+		76C9A96B2096679300B0D7BE /* CompaniesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A96A2096679300B0D7BE /* CompaniesMapViewController.swift */; };
+		76C9A9712096825C00B0D7BE /* VerticalStackLayoutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */; };
 		7CC02C387D18A9136CD4773A /* Pods_GeoSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8B6DB14E491DC1227EC6AC /* Pods_GeoSearchUITests.framework */; };
 		9221D9B366BC9601B15CA4E4 /* Pods_GeoSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D46CCC3AFC4CC974AD57BC9 /* Pods_GeoSearch.framework */; };
 		974121F54441ABDE63D9195E /* Pods_GeoSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20BD8BB21C529F47D676F8C /* Pods_GeoSearchTests.framework */; };
@@ -85,7 +85,7 @@
 		76161B00209636F40023B437 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		76161B082096378C0023B437 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		76C9A94620963A6B00B0D7BE /* CompaniesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListProtocols.swift; sourceTree = "<group>"; };
-		76C9A94820963A8200B0D7BE /* CompaniesMapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesMapProtocol.swift; sourceTree = "<group>"; };
+		76C9A94820963A8200B0D7BE /* CompaniesMapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesMapProtocols.swift; sourceTree = "<group>"; };
 		76C9A94A20963A9500B0D7BE /* GeoSearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchProtocols.swift; sourceTree = "<group>"; };
 		76C9A94C20963C5400B0D7BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		76C9A94F2096406800B0D7BE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 		76C9A96220965B5E00B0D7BE /* GeoSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchInteractor.swift; sourceTree = "<group>"; };
 		76C9A964209661CF00B0D7BE /* GlobalServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalServiceLocator.swift; sourceTree = "<group>"; };
 		76C9A9662096676E00B0D7BE /* CompaniesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListViewController.swift; sourceTree = "<group>"; };
-		76C9A96A2096679300B0D7BE /* CompaniesListMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListMapViewController.swift; sourceTree = "<group>"; };
-		76C9A96C209667AD00B0D7BE /* CompaniesListMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListMapInteractor.swift; sourceTree = "<group>"; };
+		76C9A96A2096679300B0D7BE /* CompaniesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesMapViewController.swift; sourceTree = "<group>"; };
+		76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackLayoutNode.swift; sourceTree = "<group>"; };
 		7A8B6DB14E491DC1227EC6AC /* Pods_GeoSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE65D3CC92C84380F4F775 /* Pods-GeoSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSearchTests/Pods-GeoSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D46CCC3AFC4CC974AD57BC9 /* Pods_GeoSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,9 +256,8 @@
 		76161B03209637280023B437 /* CompaniesMap */ = {
 			isa = PBXGroup;
 			children = (
-				76C9A94820963A8200B0D7BE /* CompaniesMapProtocol.swift */,
-				76C9A96A2096679300B0D7BE /* CompaniesListMapViewController.swift */,
-				76C9A96C209667AD00B0D7BE /* CompaniesListMapInteractor.swift */,
+				76C9A94820963A8200B0D7BE /* CompaniesMapProtocols.swift */,
+				76C9A96A2096679300B0D7BE /* CompaniesMapViewController.swift */,
 			);
 			path = CompaniesMap;
 			sourceTree = "<group>";
@@ -266,6 +265,7 @@
 		76161B042096374D0023B437 /* GeoSearch */ = {
 			isa = PBXGroup;
 			children = (
+				76C9A96F2096824100B0D7BE /* Views */,
 				76C9A94A20963A9500B0D7BE /* GeoSearchProtocols.swift */,
 				76C9A96020965B4500B0D7BE /* GeoSearchViewController.swift */,
 				76C9A96220965B5E00B0D7BE /* GeoSearchInteractor.swift */,
@@ -321,6 +321,14 @@
 			children = (
 			);
 			path = LocationService;
+			sourceTree = "<group>";
+		};
+		76C9A96F2096824100B0D7BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EDE756E10CB53CBE97411FA4 /* Frameworks */ = {
@@ -564,14 +572,14 @@
 				76161AFD209622BE0023B437 /* Company.swift in Sources */,
 				76C9A94D20963C5400B0D7BE /* Result.swift in Sources */,
 				76161B01209636F40023B437 /* Address.swift in Sources */,
-				76C9A96D209667AD00B0D7BE /* CompaniesListMapInteractor.swift in Sources */,
 				76161AFF209633B40023B437 /* NetworkService.swift in Sources */,
-				76C9A94920963A8200B0D7BE /* CompaniesMapProtocol.swift in Sources */,
+				76C9A94920963A8200B0D7BE /* CompaniesMapProtocols.swift in Sources */,
 				76C9A94720963A6B00B0D7BE /* CompaniesListProtocols.swift in Sources */,
 				76C9A956209645D300B0D7BE /* GeoSearchCompaniesContainer.swift in Sources */,
 				76C9A94B20963A9500B0D7BE /* GeoSearchProtocols.swift in Sources */,
-				76C9A96B2096679300B0D7BE /* CompaniesListMapViewController.swift in Sources */,
+				76C9A96B2096679300B0D7BE /* CompaniesMapViewController.swift in Sources */,
 				76C9A9672096676E00B0D7BE /* CompaniesListViewController.swift in Sources */,
+				76C9A9712096825C00B0D7BE /* VerticalStackLayoutNode.swift in Sources */,
 				76C9A9542096459800B0D7BE /* GeoSearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

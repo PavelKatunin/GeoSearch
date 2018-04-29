@@ -6,6 +6,7 @@ class GeoSearchViewController: ASViewController<ASDisplayNode>, GeoSearchViewPro
     var geoSearchInteractor: GeoSearchInteractorProtocol
     
     weak var companiesListView: CompaniesListViewProtocol?
+    weak var companiesMapView: CompaniesMapViewProtocol?
     
     var companies: [Company] = [] {
         didSet {
@@ -27,13 +28,30 @@ class GeoSearchViewController: ASViewController<ASDisplayNode>, GeoSearchViewPro
     override func viewDidLoad() {
 
         let companiesListViewController = CompaniesListViewController()
-        
         addChildViewController(companiesListViewController)
-        view.addSubview(companiesListViewController.view)
-        node.addSubnode(companiesListViewController.node)
+        companiesListViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(companiesListViewController.view)
+        self.node.addSubnode(companiesListViewController.node)
+        companiesListView = companiesListViewController
         companiesListViewController.didMove(toParentViewController: self)
+        
+        
+        let companiesMapViewController = CompaniesMapViewController()
+        addChildViewController(companiesMapViewController)
+        companiesMapViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(companiesMapViewController.view)
+        self.node.addSubnode(companiesMapViewController.node)
+        companiesMapView = companiesMapViewController
+        companiesMapViewController.didMove(toParentViewController: self)
+        
+        self.node.layoutSpecBlock = { node, constrainedSize in
+            return ASStackLayoutSpec(direction: .vertical,
+                                     spacing: 0,
+                                     justifyContent: .start,
+                                     alignItems: .start,
+                                     children: [companiesListViewController.node, companiesMapViewController.node])
+        }
+        
     }
-    
-    //MARK: - Private
     
 }
