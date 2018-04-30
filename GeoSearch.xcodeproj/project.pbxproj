@@ -11,7 +11,6 @@
 		76161ACA209621FC0023B437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76161AC8209621FC0023B437 /* Main.storyboard */; };
 		76161ACC209621FC0023B437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76161ACB209621FC0023B437 /* Assets.xcassets */; };
 		76161ACF209621FC0023B437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76161ACD209621FC0023B437 /* LaunchScreen.storyboard */; };
-		76161ADA209621FD0023B437 /* GeoSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161AD9209621FD0023B437 /* GeoSearchTests.swift */; };
 		76161AE5209621FD0023B437 /* GeoSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161AE4209621FD0023B437 /* GeoSearchUITests.swift */; };
 		76161AF4209622280023B437 /* GeoSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161AF3209622280023B437 /* GeoSearchService.swift */; };
 		76161AF62096224A0023B437 /* HittaGeoSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76161AF52096224A0023B437 /* HittaGeoSearchService.swift */; };
@@ -74,7 +73,6 @@
 		76161ACE209621FC0023B437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76161AD0209621FC0023B437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76161AD5209621FD0023B437 /* GeoSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76161AD9209621FD0023B437 /* GeoSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchTests.swift; sourceTree = "<group>"; };
 		76161ADB209621FD0023B437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76161AE0209621FD0023B437 /* GeoSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76161AE4209621FD0023B437 /* GeoSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchUITests.swift; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 			children = (
 				76C9A95C2096566700B0D7BE /* XCTestCase+Extensions.swift */,
 				76C9A959209655B400B0D7BE /* Resources */,
-				76161AD9209621FD0023B437 /* GeoSearchTests.swift */,
 				76161ADB209621FD0023B437 /* Info.plist */,
 				76C9A957209647DA00B0D7BE /* ParsingTests.swift */,
 			);
@@ -614,7 +611,6 @@
 			files = (
 				76C9A958209647DA00B0D7BE /* ParsingTests.swift in Sources */,
 				76C9A95D2096566700B0D7BE /* XCTestCase+Extensions.swift in Sources */,
-				76161ADA209621FD0023B437 /* GeoSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 384BUBT636;
 				INFOPLIST_FILE = GeoSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,6 +799,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 384BUBT636;
 				INFOPLIST_FILE = GeoSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

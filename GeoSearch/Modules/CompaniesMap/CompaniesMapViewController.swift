@@ -45,7 +45,8 @@ class CompaniesMapViewController : ASViewController<ASMapNode>,
         }
         
         delegate?.companiesMapViewDidReturn(geoSearchReuest: GeoSearchRequest(from: topLeftLocation,
-                                                                              to: bottomRightLocation),
+                                                                              to: bottomRightLocation,
+                                                                              hint: mapView.region.center ),
                                             mapView: self)
     }
     

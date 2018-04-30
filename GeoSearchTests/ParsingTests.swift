@@ -25,6 +25,8 @@ class ParsingTests: XCTestCase {
         
         XCTAssertEqual(companies.count, 51)
         XCTAssertEqual(companies[0].displayName, "Maxi ICA Stormarknad")
+        XCTAssertEqual(companies[0].addresses?[0].street, "Gamla Flygplatsvägen")
+        XCTAssertEqual(companies[0].addresses?[0].city, "Torslanda")
     }
     
 }
