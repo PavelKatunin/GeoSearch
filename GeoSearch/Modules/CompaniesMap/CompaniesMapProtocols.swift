@@ -1,4 +1,5 @@
 import Foundation
+import CoreLocation
 
 protocol CompaniesMapViewDelegate: class {
     
@@ -9,5 +10,8 @@ protocol CompaniesMapViewDelegate: class {
 protocol CompaniesMapViewProtocol: class {
     
     var delegate: CompaniesMapViewDelegate? { get set }
+    
+    var topLeftLocation: CLLocationCoordinate2D? { get }
+    var bottomRightLocation: CLLocationCoordinate2D? { get }
     
 }

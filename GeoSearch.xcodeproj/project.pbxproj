@@ -38,6 +38,7 @@
 		76C9A9672096676E00B0D7BE /* CompaniesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A9662096676E00B0D7BE /* CompaniesListViewController.swift */; };
 		76C9A96B2096679300B0D7BE /* CompaniesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A96A2096679300B0D7BE /* CompaniesMapViewController.swift */; };
 		76C9A9712096825C00B0D7BE /* VerticalStackLayoutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */; };
+		76C9A97520972D0700B0D7BE /* MKCoordinateRegion+Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9A97420972D0700B0D7BE /* MKCoordinateRegion+Locations.swift */; };
 		7CC02C387D18A9136CD4773A /* Pods_GeoSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8B6DB14E491DC1227EC6AC /* Pods_GeoSearchUITests.framework */; };
 		9221D9B366BC9601B15CA4E4 /* Pods_GeoSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D46CCC3AFC4CC974AD57BC9 /* Pods_GeoSearch.framework */; };
 		974121F54441ABDE63D9195E /* Pods_GeoSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20BD8BB21C529F47D676F8C /* Pods_GeoSearchTests.framework */; };
@@ -102,6 +103,7 @@
 		76C9A9662096676E00B0D7BE /* CompaniesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListViewController.swift; sourceTree = "<group>"; };
 		76C9A96A2096679300B0D7BE /* CompaniesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesMapViewController.swift; sourceTree = "<group>"; };
 		76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackLayoutNode.swift; sourceTree = "<group>"; };
+		76C9A97420972D0700B0D7BE /* MKCoordinateRegion+Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Locations.swift"; sourceTree = "<group>"; };
 		7A8B6DB14E491DC1227EC6AC /* Pods_GeoSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE65D3CC92C84380F4F775 /* Pods-GeoSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSearchTests/Pods-GeoSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D46CCC3AFC4CC974AD57BC9 /* Pods_GeoSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 		76161AC3209621FC0023B437 /* GeoSearch */ = {
 			isa = PBXGroup;
 			children = (
+				76C9A97320972CD900B0D7BE /* Extensions */,
 				76161AF9209622730023B437 /* Entities */,
 				76161AF72096225E0023B437 /* Modules */,
 				76161AF22096220C0023B437 /* Services */,
@@ -329,6 +332,14 @@
 				76C9A9702096825C00B0D7BE /* VerticalStackLayoutNode.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		76C9A97320972CD900B0D7BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76C9A97420972D0700B0D7BE /* MKCoordinateRegion+Locations.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EDE756E10CB53CBE97411FA4 /* Frameworks */ = {
@@ -566,6 +577,7 @@
 				76161AF4209622280023B437 /* GeoSearchService.swift in Sources */,
 				76C9A95F209658BD00B0D7BE /* CompaniesList.swift in Sources */,
 				76C9A9502096406800B0D7BE /* Endpoint.swift in Sources */,
+				76C9A97520972D0700B0D7BE /* MKCoordinateRegion+Locations.swift in Sources */,
 				76C9A96120965B4600B0D7BE /* GeoSearchViewController.swift in Sources */,
 				76161AF62096224A0023B437 /* HittaGeoSearchService.swift in Sources */,
 				76161AC5209621FC0023B437 /* AppDelegate.swift in Sources */,

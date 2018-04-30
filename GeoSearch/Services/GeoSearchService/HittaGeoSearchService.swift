@@ -22,8 +22,8 @@ class HittaGeoSearchService : GeoSearchService {
         session.dataTask(with: urlRequest) { (data, response, error) in
             
             guard error == nil,
-                let data = data,
-                let response = response else {
+                  let data = data,
+                  let response = response else {
                     completion(Result.fail(GeoSearchError.connectionError))
                     return
             }
