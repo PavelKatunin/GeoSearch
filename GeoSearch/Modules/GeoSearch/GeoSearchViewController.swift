@@ -81,8 +81,11 @@ class GeoSearchViewController: ASViewController<ASDisplayNode>,
             
             switch result {
             case .success(let companies):
-                self.companiesListView?.companies = companies
-                print(companies)
+                // ASMapNode reload should be called on the main thread
+                DispatchQueue.main.async {
+                    self.companiesListView?.companies = companies
+                    print(companies)
+                }
             case .fail(let error):
                 print(error.localizedDescription)
             }

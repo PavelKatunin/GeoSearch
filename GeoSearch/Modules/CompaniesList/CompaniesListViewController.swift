@@ -2,7 +2,8 @@ import Foundation
 import AsyncDisplayKit
 
 class CompaniesListViewController: ASViewController<ASTableNode>,
-                                   CompaniesListViewProtocol {
+                                   CompaniesListViewProtocol,
+                                   ASTableDataSource {
     
     weak var tableNode: ASTableNode!
     
@@ -16,6 +17,7 @@ class CompaniesListViewController: ASViewController<ASTableNode>,
     override init(node: ASTableNode = ASTableNode()) {
         super.init(node: node)
         self.tableNode = node
+        self.tableNode.dataSource = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,5 +25,17 @@ class CompaniesListViewController: ASViewController<ASTableNode>,
     }
     
     //MARK: - Private methods
+    
+    //MARK: - ASTableDataSource
+    func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
+        return companies.count
+    }
+    
+    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+        
+        return {
+            return CompanyCell(company: self.companies[indexPath.row])
+        }
+    }
     
 }

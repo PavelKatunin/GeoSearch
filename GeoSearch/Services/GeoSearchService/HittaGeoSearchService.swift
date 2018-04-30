@@ -54,7 +54,8 @@ class HittaGeoSearchService : GeoSearchService {
     }
     
     func requestUrl(_ searchRequest: GeoSearchRequest) -> URL {
-        return URL(string: endpoint.endpoint + "search/v7/app/combined/within/57.840703831916%3A11.728156448084002%2C57.66073920808401%3A11.908121071915998/?range.to=51&range.from=1&geo.hint=57.75072152%3A11.81813876&sort.order=relevance&query=ica")!
+        // append path component
+        return URL(string: endpoint.endpoint + "/search/v7/app/combined/within/57.840703831916%3A11.728156448084002%2C57.66073920808401%3A11.908121071915998/?range.to=51&range.from=1&geo.hint=57.75072152%3A11.81813876&sort.order=relevance&query=ica")!
     }
     
 }
